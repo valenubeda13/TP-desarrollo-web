@@ -1,0 +1,342 @@
+/* ==== NAVBAR MEJORADO ==== */
+.nav {
+  background-color: #7d1919;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #f9e7cf;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f9e7cf;
+}
+
+.img-logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 60px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #f9e7cf;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ba3737;
+}
+
+/* ==== SCROLL HORIZONTAL EN CELULAR ==== */
+.scroll-x {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px 10px 15px 10px;
+  scrollbar-width: auto;
+  scrollbar-color: #ba3737 #faebd8;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-x::-webkit-scrollbar {
+  height: 10px;
+}
+
+.scroll-x::-webkit-scrollbar-thumb {
+  background-color: #ba3737;
+  border-radius: 10px;
+}
+
+.scroll-x::-webkit-scrollbar-track {
+  background-color: #faebd8;
+  border-radius: 10px;
+}
+
+/* ====== RESTO DEL MENU ====== */
+.hr_linea {
+  width: 80%;
+  border: none;
+  border-top: 2px solid #000;
+  margin: 2rem auto;
+}
+
+.titulo_menu {
+  font-family: "Bebas Neue", sans-serif;
+  align-items: center;
+  font-size: 50px;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 0%;
+}
+
+h2 {
+  text-align: center;
+}
+
+h2 a {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 35px;
+}
+
+.opciones {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.opciones a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #ba3737;
+  color: #f9e7cf;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  transition: all 300ms ease;
+}
+
+.opciones a:hover {
+  box-shadow: 0 0 15px #ba3737;
+}
+
+/* ==== COMBOS DE COMIDA ==== */
+.fila-carne,
+.fila-pollo,
+.fila-vegetariano,
+.paratomar {
+  overflow-x: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 15px 10px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.caja_carne,
+.caja_pollo,
+.caja_vegi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 350px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  margin: 0 auto 20px;
+}
+
+.carne,
+.pollo,
+.vege,
+.bebida {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.caja_carne p,
+.caja_pollo p,
+.caja_vegi p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  border: 2px solid #ba3737;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #fff4ea;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+  /* FOOTER */ 
+
+  
+.pie_de_pagina {
+  width: 100%;
+  background-color: #7d1919;
+  color: #fff;
+  font-size: 1vw;
+
+ 
+}
+
+.pie_de_pagina .caja_1 {
+  
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5vw 0;
+}
+
+.pie_de_pagina .caja_1 .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+
+.pie_de_pagina .caja_1 .box img {
+  width: 8vw;
+  min-width: 60px;
+}
+
+.caja_1 .red_social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.caja_1 .red_social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  background-color: #ba3737;
+  margin: 4px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 300ms ease;
+}
+
+.caja_1 .red_social a:hover {
+  color: #ec6089;
+}
+
+.caja_2 {
+  background-color: #ba3737;
+  text-align: center;
+  padding: 6px 10px;
+  font-size: 12px;
+  
+}
+footer {
+  margin-top: auto;
+}
+
+/* ==== RESPONSIVE ADAPTACIONES ==== */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #7d1919;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    text-align: center;
+  }
+
+  .caja_carne,
+  .caja_pollo,
+  .caja_vegi {
+    width: 250px;
+  }
+
+  .carne,
+  .pollo,
+  .vege {
+    height: auto;
+  }
+
+  .caja_carne p,
+  .caja_pollo p,
+  .caja_vegi p {
+    font-size: 13px;
+  }
+
+  .pie_de_pagina .caja_1 {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .pie_de_pagina {
+    font-size: 14px;
+  }
+}
+ .pie_de_pagina {
+    font-size: 14px;
+  }
+
+  .pie_de_pagina .caja_1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .pie_de_pagina .caja_1 .box img {
+    width: 100px;
+  }
+
+  .caja_1 .red_social {
+    justify-content: center;
+  }
+
+  .caja_1 .red_social a {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    margin: 4px;
+  }
+
+  .caja_2 {
+    font-size: 12px;
+    padding: 8px;
+  }
